@@ -31,8 +31,8 @@ main = hakyll $ do
         compile $ do
             posts <- recentFirst =<< loadAll "posts/*"
             let archiveCtx =
-                    listField "posts" postCtx (return posts) `mappend`
-                    constField "title" "Archives"            `mappend`
+                    listField "posts" postCtx (return posts) <>
+                    constField "title" "Archives"            <>
                     defaultContext
 
             makeItem ""
@@ -45,8 +45,8 @@ main = hakyll $ do
         compile $ do
             posts <- recentFirst =<< loadAll "posts/*"
             let indexCtx =
-                    listField "posts" postCtx (return posts) `mappend`
-                    constField "title" "Welcome"             `mappend`
+                    listField "posts" postCtx (return posts) <>
+                    constField "title" "Welcome"             <>
                     defaultContext
 
             getResourceBody
@@ -59,8 +59,8 @@ main = hakyll $ do
 --------------------------------------------------------------------------------
 postCtx :: Context String
 postCtx =
-    listField "posts" postCtx posts `mappend`
-    dateField "date" "%B %e, %Y"    `mappend`
+    listField "posts" postCtx posts <>
+    dateField "date" "%B %e, %Y"    <>
     defaultContext
     where
         posts = loadAll "posts/*" >>= recentFirst

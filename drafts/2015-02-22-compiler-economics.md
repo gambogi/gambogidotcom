@@ -24,6 +24,3 @@ In late 1953, John Backus began work with a team of ten programmers to
 develop a compiler for a high level language he had designed.
 The language was FORTRAN, and it would take this team of now venerated
 programmers just over 3 years to complete.
-
-
-

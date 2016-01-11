@@ -1,40 +1,56 @@
 <html>
-<!-- Many thanks to the work of the designers of realworldocaml.org 
-     It is a beautifully designed site and mostly lifted here with credit. 
-     Please drop me an email if the use of the code is considered improper 
-  -->
-	<head>
-		<meta charset="utf-8"></meta>
-		<meta http-equiv="Content-Type" content="text/html; charset=utf-8"></meta>
-		<link rel="stylesheet" href="css/main.css"></link>	
-		<title>Matt Gambogi | $title$</title>
-	</head>
+    <head>
+        <meta charset="utf-8"></meta>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8"></meta>
+        <link rel="stylesheet" href="/css/main.css"></link>
+        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro"
+              rel="stylesheet"
+              type="text/css">
 
-	<body>
-		<div class="body">
-			<nav class="navigation">
-				<ul>
-					<li><a></a></li>
-					<li><a href="//github.com/gambogi/resume/raw/master/resume.pdf">Resume</a>
-					</li>
-					<li><a href="//linkedin.com/in/mgambogi">LinkedIn</a>
-					</li>
-					<li><a href="//github.com/gambogi">Github</a>
-					</li>
-				</ul>
-				<ul>
-					<li><a>Posts</a></li>
-					$partial("templates/post-list.html")$
-				</ul>
-			</nav>
-			<header class="header">
-				<h1>Matt Gambogi</h1>
-			</header>
-			<article class="page">
-			<h1>$title$</h1>
-			$body$
-			</article>
-		</div>
-	</body>
+        <title>Matt Gambogi | $title$</title>
+        <script type="text/x-mathjax-configure">
+        MathJax.Hub.Config({
+            tex2jax: {inlineMath: [['<jax>', '</jax>']]
+                     ,processEnvironments: True}
+            });
+        </script>
+        <script
+            type="text/javascript"
+            src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+        </script>
+    </head>
 
+    <body>
+        <div class="body">
+            <nav class="navigation">
+                <ul>
+                    <li><a href="/">Matt Gambogi</a></li>
+                    <li><a href="/archive.html">Posts</a>
+                    </li>
+                    <li><a href="//github.com/gambogi/resume/raw/master/resume.pdf">Resume</a>
+                    </li>
+                    <li><a href="//linkedin.com/in/mgambogi">LinkedIn</a>
+                    </li>
+                    <li><a href="//github.com/gambogi">Github</a>
+                    </li>
+                </ul>
+            </nav>
+            <article class="page">
+            <h1>$title$</h1>
+            <div class="pagebody">
+            $body$
+            </div>
+            </article>
+        </div>
+    </body>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-41239614-2', 'auto');
+  ga('send', 'pageview');
+
+</script>
 </html>

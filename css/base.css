@@ -7,14 +7,13 @@
 body,
 textarea,
 input {
-    /*font-family: "Domine", serif;*/
+    font-family: "Domine", serif;
     font-size: 14px;
     color: #000000;
 }
 
 body {
     line-height: 1.57;
-    /*background: #EFEFE7;*/
     min-width: 980px;
 }
 
@@ -27,17 +26,17 @@ body {
 
 /* Header. */
 
-.header,
+.pageheader,
 .navigation {
     position: fixed;
     width: 214px;
+    font-family: "Domine", serif;
 }
 
 /* Navigation. */
 
 .navigation {
-  font-family: serif;
-  margin-top: 25px;
+    font-family: "Domine", serif;
 }
 
 .navigation ul {
@@ -46,7 +45,7 @@ body {
 }
 
 .navigation > ul > li {
-    font-size: 14px;
+    font-size: 16px;
     margin-bottom: 0;
 }
 
@@ -57,7 +56,7 @@ body {
 .navigation > ul > li:first-child > a,
 .navigation > ul > li:first-child > a.here,
 .navigation > ul > li:first-child > a:hover {
-    font-size: 14px;
+    font-size: 24px;
     border-bottom: 1px #8E8880 solid;
     color: #000000;
     display: table;
@@ -86,19 +85,19 @@ body {
 
 .page {
     margin-bottom: 40px;
-    /*background: #FCFCFA*/;
-    /*border: 1px #E2E0D8 solid;
-    border-radius: 0px;*/
+    background: #FCFCFA;
+    border: 1px #E2E0D8 solid;
+    border-radius: 0px;
     width: 656px;
     position: relative;
     padding: 12px 22px;
-    margin-left: 150px;
-	background: white;
-	opacity: initial;
+    margin-left: 214px;
+    background: white;
+    opacity: initial;
 }
 
 .page p {
-    font-family: sans-serif;
+    text-indent: 15px;
 }
 /* Sectioning. */
 
@@ -109,19 +108,20 @@ body {
     font-weight: lighter;
 }
 
-.page section > h1 {
+.pagebody > h1 {
     font-weight: lighter;
     margin-top: 18px;
     margin-bottom: 14px;
 }
 
-.page section > h1 + section {
+.pagebody > h1 + section {
     margin-top: -4px;
 }
 
-.page > section > h1 {
+.pagebody > h1 {
     font-size: 18px;
-    text-transform: uppercase;
+    font-weight: bold;
+    //text-transform: capitalize;
 }
 
 .page > section > section > h1 {
@@ -168,6 +168,10 @@ body {
 
 /* Content styles. */
 
+.info {
+    padding-bottom: 5%;
+}
+
 p,
 ol,
 ul,
@@ -175,24 +179,30 @@ li,
 table
 {
     margin-bottom: 15px;
+    font-size: 16px;
 }
 
 ul,
 ol {
     margin-left: 25px;
+    list-style: none;
 }
 
-code,
-pre {
-    font-family: Courier, monospace;
-    font-size: 100%;
+.sourceCode {
+    padding-bottom: 15px;
+}
+code *,
+pre * {
+    font-family: 'Source Code Pro', monospace !important;
+    font-size: 16px;
+
 }
 
 pre {
-    background: #E8E7DD;
+    //background: #E8E7DD;
+    border: 1px #E2E0D8 dashed;
     line-height: 1.27;
     padding: 7px;
-    padding-left: 7px;
     overflow: auto;
 }
 
@@ -271,3 +281,4 @@ a > img {
     font-size: 12px;
     padding: 20px 20px 0 20px;
 }
+
