@@ -2,10 +2,12 @@
     <head>
         <meta charset="utf-8"></meta>
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8"></meta>
-        <link rel="stylesheet" href="/css/main.css"></link>
-        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro"
+
+        $for(styles)$
+        <link href="/css/$style$.css"
               rel="stylesheet"
-              type="text/css">
+              type="text/css"></link>
+        $endfor$
 
         <title>Matt Gambogi | $title$</title>
         <script type="text/x-mathjax-configure">
@@ -18,6 +20,10 @@
             type="text/javascript"
             src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
         </script>
+
+        $for(headers)$
+        <script type="text/javascript" src="/scripts/$header$.js"></script>
+        $endfor$
     </head>
 
     <body>
@@ -25,7 +31,7 @@
             <nav class="navigation">
                 <ul>
                     <li><a href="/">Matt Gambogi</a></li>
-                    <li><a href="/archive.html">Posts</a>
+                    <li><a href="/articles.html">Articles</a>
                     </li>
                     <li><a href="//github.com/gambogi/resume/raw/master/resume.pdf">Resume</a>
                     </li>
@@ -42,6 +48,9 @@
             </div>
             </article>
         </div>
+    $for(footers)$
+    <script type="text/javascript" src="/scripts/$footer$.js"></script>
+    $endfor$
     </body>
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){

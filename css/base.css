@@ -61,6 +61,7 @@ body {
     color: #000000;
     display: table;
     padding-bottom: 1px;
+    margin-bottom: 10px;
 }
 
 .navigation > ul > li > ul > li {

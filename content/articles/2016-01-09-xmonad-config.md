@@ -1,5 +1,6 @@
 ---
 title: XMonad Configuration
+author: Matt Gambogi
 ---
 
 [XMonad][1] is a no-frills window management system. There are a good number of
@@ -68,7 +69,7 @@ main = xmonad (defaultConfig { borderWidth = 0
               )
 ```
 
-We import a module which supplies the setWMName function, which takes care of
+We import a module which supplies the `setWMName` function, which takes care of
 setting the name XMonad gives to X programs running inside its scope. This
 is good enough to trick Swing programs.
 
@@ -94,7 +95,7 @@ main = xmonad (defaultConfig
 `additionalKeysP` function takes an XConfig (in this case our modified
 `defaultConfig`) and a list of tuples specifying the key combination and the IO
 action to take. It simply unions the keybindings already present in the config
-and the additional ones specified by the tuple. Any prefix function in haskell
+and the additional ones specified by the tuple. Any prefix function in Haskell
 may be written as infix by enclosing it in backticks. This can sometimes make
 things easier to read.
 Now when we press `Mod + s` `scrot` will take a screenshot and move it to the
