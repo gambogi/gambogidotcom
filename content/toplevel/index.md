@@ -2,9 +2,12 @@
 title: Welcome
 ---
 
-I am a double major in Computer Science and Economics at the [Rochester
-Institute of Technology][rit].  I am looking for full time opportunities
-starting in the Summer or Fall of 2017.  For more information on my experience,
-please see my resume or github.
+I'm Matt Gambogi, Computer Science major and Economics minor at the [Rochester
+Institute of Technology][rit].
 
+I've interned at a variety of companies as a software engineer, including
+Microsoft, Intuit, Johnson and Johnson, and others. For more, look at my
+[resume][res]. Currently seeking full time roles starting summer 2017.
 [rit]: https://rit.edu "Rochester Institute of Technology"
+[res]: https://github.com/gambogi/resume/raw/master/resume.pdf
+[gh]: https://github.com/gambogi "Matt Gambogi's Github"
