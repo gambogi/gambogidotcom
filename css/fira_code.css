@@ -1,0 +1,9 @@
+@font-face {
+  font-family: 'Fira Mono';
+  font-style: normal;
+  font-weight: 400;
+  font-variant-ligatures: common-ligatures;
+  -webkit-font-variant-ligatures: common-ligatures;
+
+  src: local('Fira Mono'), local('Fira Code'), url(https://fonts.googleapis.com/css?family=Fira+Mono) format('truetype');
+}

@@ -7,11 +7,12 @@ import Site.Prelude
 
 styles :: Context a
 styles = mkListField "style"
-       [ "source_code_pro"
+       [ "fira_mono"
        , "d4"
        , "main"
        ]
 
+loadAllArticles :: Compiler [Item String]
 loadAllArticles = loadAll ("content/articles/*" .&&. hasNoVersion)
 
 htmlRules :: Rules ()

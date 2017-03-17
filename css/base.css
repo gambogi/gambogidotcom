@@ -88,13 +88,12 @@ body {
     margin-bottom: 40px;
     background: #FCFCFA;
     border: 1px #E2E0D8 solid;
-    border-radius: 0px;
+    border-radius: 4px;
     width: 656px;
     position: relative;
     padding: 12px 22px;
     margin-left: 214px;
     background: white;
-    opacity: initial;
 }
 
 .page p {
@@ -194,13 +193,13 @@ ol {
 }
 code *,
 pre * {
-    font-family: 'Source Code Pro', monospace !important;
+    font-family: 'Fira Mono', monospace !important;
     font-size: 16px;
 
 }
 
 pre {
-    //background: #E8E7DD;
+    background: #fffbe9;
     border: 1px #E2E0D8 dashed;
     line-height: 1.27;
     padding: 7px;
