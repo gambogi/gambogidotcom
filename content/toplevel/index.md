@@ -1,14 +1,18 @@
 ---
-title: Welcome
+title: Hi
 ---
 
-I'm Matt Gambogi, Computer Science major and Economics minor at the [Rochester
-Institute of Technology][rit].
+I'm still trying to figure out how to define myself. In the meantime, I enjoy
+running,
+cycling,
+good friends,
+good food,
+good music,
+and a good podcast.
 
-I've interned at a variety of companies as a software engineer, including
-Microsoft, Intuit, Johnson and Johnson, among others. For more, look at my
-[resume][res]. Currently seeking full time roles starting summer 2017.
+Professionally, I write software with my team at Apple. I'm always happy to
+discuss new opportunities, but I'm not looking for work. Although I'm fairly early
+in my career if you are interested in advice feel free to reach out.
 
-[rit]: https://rit.edu "Rochester Institute of Technology"
 [res]: https://github.com/gambogi/resume/raw/master/resume.pdf
 [gh]: https://github.com/gambogi "Matt Gambogi's Github"
